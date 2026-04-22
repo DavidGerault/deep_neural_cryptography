@@ -8,6 +8,7 @@ conda activate ec26_dnc
 ```
 
 The implementations from nn_aes.py are compatible with CPUs, but the benchmark scripts are intended to be ran on a CUDA-compatible GPU. 
+The code was tested on an NVIDIA A100 GPU.
 
 ## Neural AES Implementations
 The file `deep_neural_cryptography/nn_aes.py`contains natural implementations of the AES as a Deep Neural Network, as described in our paper, `Deep Neural Cryptography`.
