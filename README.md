@@ -47,6 +47,7 @@ Average # Base plaintexts 1.0
 ```
 
 ## Neural AES Benchmarking 
+These benchmarks correspond to Appendix C of our paper.
 
 ### Neural AES Throughput
 
@@ -72,7 +73,6 @@ Protection Overhead Analysis:
 ```
 
 ### Runtimes versus Conventional DNNs
-These benchmarks correspond to Appendix C of our paper.
 Running `deep_neural_cryptography/benchmark_vs_dnns.py` will provide the runtimes of `TTablesNeuralAES_Protected` in comparison to various DNNs: 
 
 ```
