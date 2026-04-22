@@ -13,13 +13,13 @@ The implementations from nn_aes.py are compatible with CPUs, but the benchmark s
 The code was tested on an NVIDIA A100 GPU.
 
 ## Neural AES Implementations
-The file `deep_neural_cryptography/nn_aes.py`contains natural implementations of the AES as a Deep Neural Network, as described in our paper, `Deep Neural Cryptography`.
+The file `deep_neural_cryptography/nn_aes.py`contains natural implementations of the AES as a Deep Neural Network, as described in Section 6 of our paper, `Deep Neural Cryptography`.
 In particular, it defines the classes `NeuralAESBase`, which is a simple implementation, and `TTablesNeuralAES`, an optimized variant using TTables.
 
-Both classes inherit from `NeuralAESImplementation`; they receive the secret key (as an integer), and parameters `direction` ('Encryption' or 'Decryption') and `protected`, a boolean to activate or deactivate the protection mechanism defined in the paper. They expose a `forward` method to process tensors of n plaintexts, with shape (n, 128).
+Both classes inherit from `NeuralAESImplementation`; they receive the secret key (as an integer), and parameters `direction` ('Encryption' or 'Decryption') and `protected`, a boolean to activate or deactivate the protection mechanism defined in Section 9 of the paper. They expose a `forward` method to process tensors of n plaintexts, with shape (n, 128).
 
 ## Neural AES Attacks
-The `deep_neural_cryptography/attacks.py` file demonstrates our attacks on 3 cases: the natural implementations, the sanitized case, and the separated ReLUs scenario.
+The `deep_neural_cryptography/attacks.py` file demonstrates our attacks on 3 cases: the natural implementations (as described in Section 7.3 of the paper), the sanitized case (corresponding to Section 7.3), and the separated ReLUs scenario (described in Appendix A).
 
 ```
 Running it outputs the results of key recovery for a random key as follows:
@@ -72,7 +72,7 @@ Protection Overhead Analysis:
 ```
 
 ### Runtimes versus Conventional DNNs
-
+These benchmarks correspond to Appendix C of our paper.
 Running `deep_neural_cryptography/benchmark_vs_dnns.py` will provide the runtimes of `TTablesNeuralAES_Protected` in comparison to various DNNs: 
 
 ```
