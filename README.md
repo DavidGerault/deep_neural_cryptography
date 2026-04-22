@@ -1,4 +1,6 @@
 # Deep Neural Cryptography
+This repository contains the companion code for the `Deep Neural Cryptography` paper by David Gérault, Anna Hambitzer, Eyal Ronen and Adi Shamir, published at EUROCRYPT 2026 and available at [https://eprint.iacr.org/2025/288](https://eprint.iacr.org/2025/288). In particular, it contains the implementation of the AES block cipher as a DNN, as well as the attacks and benchmarks described in the paper.
+
 ## Setup
 The project was implemented using the package versions described in environment.yml; it can be used as follows (tested with miniconda 26.1.1):
 
