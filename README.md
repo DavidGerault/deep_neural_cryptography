@@ -1,6 +1,6 @@
 # Deep Neural Cryptography
 ## Setup
-The project was implemented using the package versions described in environment.yml; it can be used as follows:
+The project was implemented using the package versions described in environment.yml; it can be used as follows (tested with miniconda 26.1.1):
 
 ```bash
 conda env create -f environment.yml
